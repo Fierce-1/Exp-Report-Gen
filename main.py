@@ -1,10 +1,6 @@
 import time
 from pymongo import MongoClient
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.support.ui import Select
-import pdfkit
+
 from flask import *
 
 
