@@ -9,7 +9,7 @@ from flask import *
 
 
 cluster = MongoClient(
-    "mongodb+srv://Hesham:fcbarcelona12@clusterh.lcaaf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+    "mongodb+srv://<username>:<pass>@clusterh.lcaaf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 db = cluster["user"]
 collection = db["user"]
 
@@ -36,7 +36,7 @@ def login():
 @app.route('/report.html', methods=['POST', 'GET'])
 def report():
     cluster1 = MongoClient(
-        "mongodb+srv://Hesham:fcbarcelona12@clusterh.lcaaf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+        "mongodb+srv://<username>:<pass>@clusterh.lcaaf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
     db1 = cluster1["test"]
     collection1 = db1["test"]
 
