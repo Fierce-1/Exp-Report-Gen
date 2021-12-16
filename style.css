@@ -1,0 +1,80 @@
+body{
+	
+	background-color: #16043C;
+	width: 877px;
+	height: 746px;
+}  
+.center{
+	position: absolute;
+	top: 9%;
+	left: 23%;
+	background: lightgray;
+	width: 700px;
+	height: 515px;
+	border-radius: 10px;
+}
+p {
+	color: black;
+	font-size: 30px;
+	padding-left: 37px;
+	margin-bottom: 24px;
+}
+.name{
+	padding-left: 38px;
+	font-size: 20px;
+}
+.name input{
+	font-size: 15px;
+	padding-left: 84px;
+	padding-top: 15px;
+}
+.birthday{
+	font-size: 20px;
+	padding-left: 38px;
+	padding-top: 20px;
+}
+.birthday input{
+	font-size: 15px;
+	padding-left: 124px;
+	padding-top: 15px;
+}
+.email{
+	font-size: 20px;
+	padding-left: 38px;
+	padding-top: 20px;
+}
+.email input{
+	font-size: 15px;
+	padding-left: 84px;
+	padding-top: 15px;
+}
+.designation{
+	font-size: 20px;
+	padding-left: 38px;
+	padding-top: 20px;
+}
+
+#designation{
+	width: 93%;
+	height: 41px;
+}
+.name2{
+	padding-left: 54%;
+	font-size: 20px;
+	padding-top: 88px;
+}
+.name2 input{
+	font-size: 15px;
+	padding-left: 84px;
+	padding-top: 15px;
+}
+.number{
+	padding-left: 54%;
+	font-size: 20px;
+	padding-top: 26px;
+}
+.number input{
+	font-size: 15px;
+	padding-left: 84px;
+	padding-top: 15px;
+}

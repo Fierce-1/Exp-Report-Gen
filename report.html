@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: #16043C;">
+<form action="/send" method="post">
+<div>
+		<div style="text-align: center; width: 100%; background-color: #0CFFF0; padding-top: 20px;">
+		<h1 style="padding-bottom: 35px;">Expression Report Generation</h1></div>
+   <div style="float: left;">
+   	<div style="  padding-top: 10%; padding-left: 25%;">
+	<button type="button" style="top: 70%;
+	left: 75%;
+	background: #0CFFF0;
+	width: 260px;
+	height: 60px;
+	border-radius: 10px;
+
+	font-size: 20px;">Print Report</button>
+	</div>
+	<div style="padding-top: 20%;  padding-left: 25%;">
+	<button type="submit" style="top: 70%;
+	left: 75%;
+	background: #0CFFF0;
+	width: 260px;
+	height: 60px;
+	border-radius: 10px;
+
+	font-size: 20px;" name="Save_PDF" value="Save_PDF">Save_PDF</button>
+	</div>
+   </div>
+    <div style=" float: none; padding-left: 70%;padding-top: 3%;">
+        <select id = "rep" name="report" style="width: 300px;height: 50px;border-radius: 15px;font-size: 20px; background-color:#0CFFF0 ;">
+            <option value="select" SELECTED><b>Choose option </b></option>
+            <option value="Report of all" name="report of all">Report of all </option>
+            <option value="males" >Report of males</option>
+            <option value="females">Report of females</option>
+            <option value="whole Crowd">Report of whole crowd</option>
+        </select>
+    </div>
+    <div style="text-align: center; padding-top: 10%; padding-right: 70px;">
+        <input style="width: 300px;height: 50px;border-radius: 15px; background-color:#0CFFF0;font-size: 16px; text-align: center;" type="date" name="start_date">
+    </div>
+    <style>
+        td, th {
+            border: 2px solid black;
+            text-align: left;
+            padding: 8px;}
+
+        tr:nth-child(even) {
+    background-color: #09CFC3;}
+    </style>
+	<div>
+        <table style="width: 100%; background-color: #0CFFF0; border:1px solid black;">
+            <tr>
+                <th>Expression</th>
+                <th>Gender</th>
+                <th>Date</th>
+            </tr>
+            {%for i in range(0, len)%}
+                <tr>
+                    <td>{{rows[i]['Emotion']}}</td>
+                    <td>{{rows[i]['Gender']}}</td>
+                    <td>{{rows[i]['Date']}}</td>
+                </tr>
+            {%endfor%}
+        </table>
+    </div>
+</div>
+</form>
+</body>
+</html>
